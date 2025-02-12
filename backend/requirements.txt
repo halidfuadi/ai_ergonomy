@@ -1,0 +1,8 @@
+Flask
+Flask_Cors
+matplotlib
+numpy
+opencv_contrib_python
+pandas
+Pillow
+ultralytics

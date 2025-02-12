@@ -1,0 +1,72 @@
+{
+        "point_config":{
+            "arm_left": {
+                "active": true,
+                "points": [7, 5, 11],
+                "quadrant": false,
+                "color_pallete": [8, 10],
+                "bad_pose": 90
+            },
+            "arm_right": {
+                "active": true,
+                "points": [8, 6, 12],
+                "quadrant": false,
+                "color_pallete": [9, 11],
+                "bad_pose": 90
+            },
+            "backpose_left": {
+                "active": true,
+                "points": [5, 11, 15],
+                "quadrant": true,
+                "color_pallete": [5],
+                "bad_pose": 30
+            },
+            "backpose_right": {
+                "active": true,
+                "points": [6, 12, 16],
+                "quadrant": true,
+                "color_pallete": [6],
+                "bad_pose": 30
+            },
+            "neck_right": {
+                "active": true,
+                "points": [4, 6, 12],
+                "quadrant": true,
+                "color_pallete": [7],
+                "bad_pose": 30
+            },
+            "neck_left": {
+                "active": true,
+                "points": [3, 5, 11],
+                "quadrant": true,
+                "color_pallete": [7],
+                "bad_pose": 30
+            },
+            "knee_left": {
+                "active": true,
+                "points": [11, 13, 15],
+                "quadrant": true,
+                "color_pallete": [3],
+                "bad_pose": 60
+            },
+            "knee_right": {
+                "active": true,
+                "points": [12, 14, 16],
+                "quadrant": true,
+                "color_pallete": [4],
+                "bad_pose": 60
+            }
+        },
+    "angle_ranges": {
+        "arm": [[0, 30], [30, 90], [90, 360]],
+        "backpose": [[0, 20], [20, 30], [30, 360]],
+        "neck": [[0, 15], [15, 30], [30, 90]],
+        "knee": [[0, 60], [60, 120], [120, 360]]
+    },
+    "angle_clusters": {
+        "arm": [0, 30, 90],
+        "backpose": [0, 20, 30],
+        "neck": [0, 10, 15],
+        "knee": [0, 60, 120 ]
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "point_config":{
+        "arm_left": {
+            "active": true,
+            "points": [7, 5, 11],
+            "quadrant": false,
+            "color_pallete": [8, 10],
+            "bad_pose": 90
+        },
+        "arm_right": {
+            "active": true,
+            "points": [8, 6, 12],
+            "quadrant": false,
+            "color_pallete": [9, 11],
+            "bad_pose": 90
+        },
+        "backpose_left": {
+            "active": true,
+            "points": [5, 11, 15],
+            "quadrant": true,
+            "color_pallete": [5],
+            "bad_pose": 30
+        },
+        "backpose_right": {
+            "active": true,
+            "points": [6, 12, 16],
+            "quadrant": true,
+            "color_pallete": [6],
+            "bad_pose": 30
+        }
+    },
+    "angle_ranges": {
+        "arm": [[0, 30], [30, 90], [90, 360]],
+        "backpose": [[0, 20], [20, 30], [30, 360]]
+    },
+    "angle_clusters": {
+        "arm": [0, 30, 90],
+        "backpose": [0, 20, 30]
+    }
+}
