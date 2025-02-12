@@ -42,24 +42,31 @@
             "color_pallete": [2,3],
             "bad_pose": 60
         },
-        "neck": {
+        "neck_right": {
             "active": true,
-            "points": [1, 6, 7],
+            "points": [4, 6, 12],
             "quadrant": true,
-            "color_pallete": [17,18],
-            "bad_pose": 80
+            "color_pallete": [18],
+            "bad_pose": 30
+        },
+        "neck_left": {
+            "active": true,
+            "points": [3, 5, 11],
+            "quadrant": true,
+            "color_pallete": [17],
+            "bad_pose": 30
         }
     },
     "angle_ranges": {
         "arm": [[0, 30], [30, 90], [90, 360]],
         "backpose": [[0, 20], [20, 30], [30, 360]],
         "leg": [[0, 30], [30, 60], [60, 360]],
-        "neck": [[0, 60], [60, 90], [90, 360]]
+        "neck": [[0, 30], [30, 60], [60, 180]]
     },
     "angle_clusters": {
         "arm": [0, 30, 90],
         "backpose": [0, 20, 30],
         "leg": [0, 30, 60],
-        "neck": [0, 60, 90]
+        "neck": [0, 30, 60]
     }
 }
