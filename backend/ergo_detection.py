@@ -10,6 +10,7 @@ from ergo_config import skeletons, color_pallete, color_list, point_configuratio
 from ergo_draw import draw_circle, draw_line, add_text_to_image
 from ergo_math import calculate_angle, calculate_perspective, getAdvice
 from ergo_utils import createFolder, convert_dict_to_csv, extract_time
+from ergo_db import process_and_store_anomalies
 import random 
 import time
 
@@ -182,6 +183,7 @@ class VideoCamera():
             self.createGraph(self.data, self.unique_id)
             convert_dict_to_csv(self.data, self.unique_id)
             self.saveWid(self.unique_id)
+            process_and_store_anomalies(self.unique_id)
         except Exception as e:
             print("GRAPH DICT CSV ", e)
         # Mengosongkan daftar frame yang telah diproses

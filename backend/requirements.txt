@@ -6,3 +6,6 @@ opencv_contrib_python
 pandas
 Pillow
 ultralytics
+sqlalchemy 
+psycopg2 
+pandas

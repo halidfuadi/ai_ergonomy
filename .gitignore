@@ -6,3 +6,5 @@ backend/__pycache__
 backend/datasets
 backend/VID_SAMPLE
 backend/VIDIO_UPLOAD
+venv
+object_detection.py

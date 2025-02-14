@@ -10,6 +10,7 @@ from ergo_detection import VideoCamera
 import cv2 
 import uuid
 import json
+from ergo_db import get_all_posture_data
 
 app = Flask(__name__, static_url_path='/DATA', static_folder='DATA')
 CORS(app)
@@ -33,7 +34,7 @@ def detect():
 def start():
     cam.startButton()
     return {
-        'message': 'okay_start',
+        'message': 'okay_start'
     }
 
 @app.route('/stop')
@@ -99,7 +100,10 @@ def change_camera(camera_input):
         cam.reinitialize_camera()
         return f"Camera changed to file {camera_input}"
 
-
+@app.route('/get_all_posture', methods=['GET'])
+def get_all_posture():
+    data = get_all_posture_data()
+    return jsonify(data)
 
 if __name__ == "__main__":
     cam = VideoCamera(0, 640) #Ganti angka ke 0 untuk menggunakan kamera laptop, dan 1 untuk menggunakan kamera webcam
